@@ -4,6 +4,7 @@
             type="text"
             v-on:keyup.enter="onEnter"
             v-model="text"
+            class="form-control"
         />
     </li>
 </template>

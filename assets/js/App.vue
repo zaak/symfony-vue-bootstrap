@@ -14,8 +14,8 @@
 </template>
 
 <script>
-    import TodoItem from "./TodoItem";
-    import TodoItemForm from "./TodoItemForm";
+    import TodoItem from "./components/TodoItem";
+    import TodoItemForm from "./components/TodoItemForm";
     import storage from "./storage";
 
     export default {

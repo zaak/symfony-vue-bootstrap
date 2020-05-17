@@ -1,6 +1,6 @@
 <template>
-    <li>
-        {{ todo.text }} <button v-on:click="onRemoveButtonClick">Remove</button>
+    <li class="clearfix">
+        <span class="todo-text">{{ todo.text }}</span><button type="button" class="btn btn-sm btn-primary btn-remove-todo" v-on:click="onRemoveButtonClick">Remove</button>
     </li>
 </template>
 

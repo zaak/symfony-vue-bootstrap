@@ -1,3 +1,23 @@
-body {
+h1 {
+    margin: 1em 0;
+}
 
+li {
+    margin-bottom: 0.7em;
+    width: 50%;
+    position: relative;
+}
+
+li:hover span {
+    font-weight: bold;
+}
+
+.todo-text {
+    display: inline-block;
+}
+
+.btn-remove-todo {
+    position: absolute;
+    right: 0;
+    top: -4px;
 }
