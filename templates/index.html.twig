@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div id="app"
+     data-todo-list-url="{{ path('todo_list') }}"
+     data-todo-add-url="{{ path('todo_add') }}"
+     data-todo-remove-url="{{ path('todo_remove', {id:':id'}) }}"
+     data-csrf-token="{{ csrf_token('todo') }}"
+></div>
+{% endblock %}
