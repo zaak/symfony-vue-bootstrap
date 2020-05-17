@@ -26,7 +26,7 @@ class TodoController extends AbstractController
 
     /**
      * @Route("/todo", name="todo_add", methods={"POST"})
-     * @param Request $request
+     *
      * @return JsonResponse
      */
     public function addTodo(Request $request)
@@ -44,7 +44,7 @@ class TodoController extends AbstractController
 
     /**
      * @Route("/todo/{id}", name="todo_remove", methods={"DELETE"})
-     * @param Request $request
+     *
      * @return JsonResponse
      */
     public function removeTodo(Request $request)
@@ -67,9 +67,6 @@ class TodoController extends AbstractController
         return JsonResponse::create($todo);
     }
 
-    /**
-     * @param Request $request
-     */
     protected function checkCsrfToken(Request $request)
     {
         $csrfToken = $request->headers->get('X-CSRF-Token');
