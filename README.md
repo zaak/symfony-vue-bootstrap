@@ -10,7 +10,7 @@ This bootstrap code is a simple TODO app that persistently stores data in a SQLi
  3. `composer install`
  4. `yarn install`
  5. `yarn build`
- 6. `php -S 0.0.0.0:8000 -t public/` or `symfony serve`
+ 6. `php -S localhost:8000 -t public/` or `symfony serve`
  
  That's it. At this point, if you go to http://localhost:8000/, you should see a simple working TODO application.
 
