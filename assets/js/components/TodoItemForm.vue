@@ -10,18 +10,18 @@
 </template>
 
 <script>
-	export default {
-		name: 'TodoItemForm',
+    export default {
+        name: 'TodoItemForm',
         data() {
-		    return {
-		    	text: null
-		    }
+            return {
+                text: null
+            }
         },
         methods: {
-			onEnter() {
+            onEnter() {
                 this.$emit('todo-added', {text: this.text});
                 this.text = null;
-			}
+            }
         }
-	};
+    };
 </script>
